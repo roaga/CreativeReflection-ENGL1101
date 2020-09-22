@@ -31,6 +31,8 @@ d = {k: v for k, v in sorted(d.items(), key=lambda item: item[1], reverse=True)}
 d = {k:v for (k,v) in d.items() if len(k) > 3}
 i = 0
 for key in list(d.keys()): 
-    if (i < 100):
-        print(key, ":", d[key])
-        i += 1
+    if (i < 300):
+        newKey = ''.join([i for i in key if i.isalpha()])
+        if (len(newKey) > 0):
+            print(newKey.upper(), ":", d[key], ",")
+            i += 1
