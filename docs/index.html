@@ -310,16 +310,16 @@
             
             var i = 1;
             $.each(words, function(key, value){
-                $("#bubble").append('<h1 style="font-size: ' + (value * 10) + (i/300) + 'pt;">' + key +'</h1>');
+                $("#bubble").append('<h1 style="font-size: ' + (value * 10) + (i/400) + 'pt;">' + key +'</h1>');
                 i += 1;
             });
         });
     </script> 
 </head>
-<body>
+<body style="background-image: url('CreativeReflection_Background_ENGL1101.png'); background-size: cover; background-repeat: no-repeat; padding: 64px">
     <div style="position: absoulute; left: 50%;">
         <div class="scroll-window" id="bubble" title="Scroll in all directions to read!">
-            <h1 style="font-size: 100pt; text-decoration: underline; margin-bottom: 64px">300 words</h1>
+            <h1 style="font-size: 100pt; font-style: italic; margin-bottom: 64px">No more than 300 words.</h1>
 
 
         </div>
